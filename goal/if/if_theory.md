@@ -151,3 +151,6 @@ This operator is true when expression is false:
 The result of that expression is true as 9 cannot be divided by 2 without a reminder => which 
 makes this expression false, but as we are using !(not) operator false becomes true(not false => true).
 
+
+speak about speeding up boolean calculations
+![img.png](img.png)
