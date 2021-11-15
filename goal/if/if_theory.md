@@ -103,7 +103,7 @@ Another important thing here is that it also can(and it usually does) contain th
     int five = 5;
     boolean isEqualToZero = five == 0;
 
-in this case we expect our boolean isEven to contain the result of expression(five == 0) and the actual result depends
+in this case we expect our boolean isEqualToZero to contain the result of expression(five == 0) and the actual result depends
 on "five": if the variable is zero then isEqualToZero is true. For our case the result of expression is false as 5 is
 obviously not zero. The **boolean** type must contain the result of any conditional(!, ||, &&) or comparative(==, !=, <
 , >, >=, <=) operator, as after the calculation of them, we get either true or false.
@@ -213,8 +213,8 @@ This operator is true only when expressions on both sides are true:
         System.out.println("Number " + number + " is above 0 and is not equal to 4!");     
     }
 
-Special point about conditions: no mater how many boolean or logics operators we have eventually we will get final
-result. It's the same as calculating numbers in math expression, in the end we get a final result.
+Special point about boolean conditions: no mater how many boolean or logics operators we have eventually we will get final
+result. It's the same as calculating numbers in math expression, in the end we get a final number.
 
 Also, we can check if something is OR smth:
 
@@ -476,7 +476,7 @@ the first block of code is executed output will be "1" and toBeAssigned will bec
 be involved, toBeAssigned will be 0.
      
 ###Logical vs boolean
-There are also such kind of "logical" operators: &(AND),|(OR),^(XOR). To explain what do they do we need to take a
+There are such operators that are called "logical": &(AND),|(OR),^(XOR). To explain what do they do we need to take a
 glance at "binary systems". Those operators can be applied not only to booleans, but also to int-s: 
 if we convert an "8" and a 5 to binary numbers we'll get: 1000, and 101.  
 
@@ -507,7 +507,7 @@ Which appears to be 0. This is just a kind of multiplication.
 ####Logical or operator
 
      int result = 8 | 5;
-      System.out.println(result);
+     System.out.println(result);
 
       //*: 13
 
@@ -564,5 +564,7 @@ And all those operands can be applied to boolean variables:
       //*: false true true
 
 ####Difference between booleans and logical operators
- 
-###Nested if conditions
+It's always better to use boolean operators. Even though 
+logical operators have a higher priority, they, unlike booleans, do not do "short-circuit"-ing which means that even if 
+in statement with (logical AND)& the first expression is false it will still calculate the right-had side, 
+when boolean conditions do not do extra calculations if not necessary.
