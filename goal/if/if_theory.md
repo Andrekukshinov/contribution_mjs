@@ -455,6 +455,7 @@ cases) and it's the same for all the rest options.
 So what should happen if we do not set break to any of the statements? (self exploring section).
 
 ####What was new in further java versions with switch
+
 As java versions were increasing and new features were introduced, there were some changes related to that construction.
 In java 13 we had the significant improvements like: key word yield was introduced, and it helps return values from 
 switch blocks.(if no value is returned => "break"), and "arrow syntax"(lambda) were included:
@@ -476,11 +477,13 @@ the first block of code is executed output will be "1" and toBeAssigned will bec
 be involved, toBeAssigned will be 0.
      
 ###Logical vs boolean
+
 There are such operators that are called "logical": &(AND),|(OR),^(XOR). To explain what do they do we need to take a
 glance at "binary systems". Those operators can be applied not only to booleans, but also to int-s: 
 if we convert an "8" and a 5 to binary numbers we'll get: 1000, and 101.  
 
 ####Logical and operator
+
 
       int result = 8 & 5;
       System.out.println(result);
@@ -505,6 +508,7 @@ third column: 0x1 => 0
 Which appears to be 0. This is just a kind of multiplication.
 
 ####Logical or operator
+
 
      int result = 8 | 5;
      System.out.println(result);
@@ -531,6 +535,7 @@ Which eventually becomes 1101 -> 13
 
 
 ####Logical xor operator
+
 
      int result = 8 | 5;
       System.out.println(result);
@@ -564,6 +569,7 @@ And all those operands can be applied to boolean variables:
       //*: false true true
 
 ####Difference between booleans and logical operators
+
 It's always better to use boolean operators. Even though 
 logical operators have a higher priority, they, unlike booleans, do not do "short-circuit"-ing which means that even if 
 in statement with (logical AND)& the first expression is false it will still calculate the right-had side, 
