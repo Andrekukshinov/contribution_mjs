@@ -68,7 +68,7 @@ This is called conditional operator, and it consists of several parts:
 
 ## Time to "uncover" the magic
 
-![img_3.png](img_3.png)
+![](img_3.png)
 
 If the condition in brackets is true, then console output will be:
 "The statement is true", and in our scenario the condition for checking is false, this is why block of code that is
