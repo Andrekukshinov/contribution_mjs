@@ -1,4 +1,4 @@
-# - Introduction
+# Introduction
 
 Every day we make certain actions that we don't even notice: after waking up we brush our teeth, some of us do
 exercises, than we go to work/studies etc.
@@ -24,6 +24,7 @@ abilities than we probably will think of entering technical university, and it d
 the decision was made don't cross with the ones from the other flow(or block of actions), and eventually we get to
 certain point which might be completely different from the one with the "law flow". And this demonstrates that one small
 choice can lead to a completely different result.
+***
 
 # The key word "if" and "if" block structure
 
@@ -50,8 +51,7 @@ Here we can see the following parts:
 
 Java provides you with the "if-else" blocks, with the following structure:
 
-    boolean isTrue = false;
-    if(isTrue) {
+    if(false) {
         System.out.println("The statement is true");
     } else {
         System.out.println("The statement is false");
@@ -60,17 +60,17 @@ Java provides you with the "if-else" blocks, with the following structure:
 This is called conditional operator, and it consists of several parts:
 
 1) if - keyword.
-2) boolean condition - isTrue.
+2) condition - false in our case.
 3) block of code to be executed if the condition is true.
 4) else - keyword, which provides you with an opportunity what to do if condition in "if"
    block is false.
 5) block of code to be executed if "else" case is in.
 
-### Time to "uncover" the magic
+## Time to "uncover" the magic
 
 ![img_3.png](img_3.png)
 
-If the condition in brackets equals to true, then console output will be:
+If the condition in brackets is true, then console output will be:
 "The statement is true", and in our scenario the condition for checking is false, this is why block of code that is
 associated with this flow will not be executed, and block of "otherwise" scenario is executed. And that means that code
 in different parts is separate one from another, and it never crosses.
@@ -80,8 +80,7 @@ in different parts is separate one from another, and it never crosses.
 
 Important Thing to mention is that braces can be skipped:
 
-    boolean isTrue = false;
-    if(isTrue) 
+    if(false) 
         System.out.println("The statement is true");
     System.out.println("I'm out of checking");
 
@@ -89,12 +88,12 @@ In this case only 'System.out.println("The statement is true");' belongs to bloc
 true, and 'System.out.println("I'm out of checking");' will be _always_ printed.
 ***
 
-### A bit more about booleans
+# Booleans 
 
-In the example above we saw something called as "condition", and in our case it was 5>4, this condition usually is used
-to check the result of some expression, whether it's true or not. And there's a special primitive variable type in java
-for such cases, which is called **boolean**. This type may contain only 2 values: **true** or **false**. To create such
-variable you need to declare its type as boolean:
+In any example with "if" blocks you are likely to see something called as "condition", and it is usually used to check 
+the result of some expression, whether it's true or not. And there's a special primitive variable type in java for 
+such cases, which is called **boolean**. This type may contain only 2 values: **true** or **false**. To create
+such variable you need to declare its type as boolean:
 
     boolean isEven = true;
 
@@ -105,7 +104,13 @@ Another important thing here is that it also can(and it usually does) contain th
 
 in this case we expect our boolean isEqualToZero to contain the result of expression(five == 0) and the actual result depends
 on "five": if the variable is zero then isEqualToZero is true. For our case the result of expression is false as 5 is
-obviously not zero. The **boolean** type must contain the result of any conditional(!, ||, &&) or comparative(==, !=, <
+obviously not zero. 
+***
+
+
+#Operators used with booleans
+
+The **boolean** type must contain the result of any conditional(!, ||, &&) or comparative(==, !=, <
 , >, >=, <=) operator, as after the calculation of them, we get either true or false.
 
 Each of those operators can be applied in boolean conditions like:
@@ -187,7 +192,8 @@ variable on the left-hand side is more OR equals to the right one the result is 
 like:
 "Is 5 more OR equals to 5?"
 
-## Multiple conditions within one if block
+***
+# Multiple conditions within one if block
 
 In reality, we can face cases when a simple checking is not enough, if we need to find number which are at the same time
 are even and can be divided by 3(like 6), the simplest way it's gonna look like this:
@@ -245,7 +251,10 @@ This operator is true when expression is false:
 The result of that expression is true as 9 doesn't equal to 0 => which makes this expression false, but as we are
 using !(not) operator false becomes true(not false => true).
 
-## Speeding up the calculations
+***
+
+
+# Speeding up the calculations
 
 Consider the following example: we need to find numbers between 0 AND 5 (0>x>5), the first thing to do is to define the
 number to check: -1, the following step is to compare it with 0, 0 is more than -1 => which means that it is definitely
@@ -266,7 +275,10 @@ number, and we can stop checking here!
 
 ![img_7.png](img_7.png)
 
-### Ternary operator
+***
+
+
+# Ternary operator
 
 Java has the only "ternary" operator which can be translated as "triple" operator. It is used as shorten version of
 plain if-else blocks like:
@@ -281,7 +293,9 @@ plain if-else blocks like:
 which becomes:
 
     int num = 5;
-    num > 4 ? ++num: --num;
+    num > 4 ?
+      ++num:
+      --num;
 
 This operator is called ternary as this is the only operator which consists of 3 parts: condition check (num > 4), and
 parts in which the first one is executed is statement is true, and the other one if false. Condition and blocks are
@@ -292,7 +306,9 @@ Another important thing about ternary operator is that each block is able to ret
 
     int num = 5;
     int result = 0;
-    result = num > 4 ? ++num: --num;
+    result = num > 4 ? 
+      ++num: 
+      --num;
     System.out.println(result);
 
     // output will be: 6
@@ -303,8 +319,9 @@ performance(or at least it's so small that can be ignored). So when you chose be
 you have to worry about is readability. Sometimes, being verbose in terms of writing code is more efficient than writing
 less code, as code is written once, but it's read dozens times. Which means that it's better to use if-else block when
 executed blocks of code consist of more than one statement.
+***
 
-### Multiple if cases
+# Multiple if cases
 
 In each of the examples above we had only two options: either something was true or not, but in reality usually we have
 more than just 2 options, we have to choose between multiple cases like: finding out the season by current month. For
@@ -335,7 +352,9 @@ meet true, or we get into "else" block. For our case if number of month wouldn't
 the
 "else" flow.
 
-### Introducing switch statement(until java 14)
+***
+
+# Introducing switch statement(until java 14)
 
 In the example where we tried to define the season based on current month, and those long if-else constructions are not
 so convenient to read and create and for such cases java proposes "switch" statement:
@@ -476,13 +495,15 @@ be assigned? Dependent on the value of "count" either 12 or 0 will be assigned t
 the first block of code is executed output will be "1" and toBeAssigned will become 12. Otherwise, the other block will
 be involved, toBeAssigned will be 0.
      
-###Logical vs boolean
+***
+
+#Logical vs boolean
 
 There are such operators that are called "logical": &(AND),|(OR),^(XOR). To explain what do they do we need to take a
 glance at "binary systems". Those operators can be applied not only to booleans, but also to int-s: 
 if we convert an "8" and a 5 to binary numbers we'll get: 1000, and 101.  
 
-####Logical and operator
+###Logical "and" operator
 
 
       int result = 8 & 5;
@@ -507,7 +528,7 @@ third column: 0x1 => 0
 
 Which appears to be 0. This is just a kind of multiplication.
 
-####Logical or operator
+###Logical "or" operator
 
 
      int result = 8 | 5;
@@ -534,7 +555,7 @@ fourth column: 1+0 => 1
 Which eventually becomes 1101 -> 13
 
 
-####Logical xor operator
+###Logical "xor" operator
 
 
      int result = 8 | 5;
@@ -568,7 +589,9 @@ And all those operands can be applied to boolean variables:
 
       //*: false true true
 
-####Difference between booleans and logical operators
+
+***
+#Difference between booleans and logical operators
 
 It's always better to use boolean operators. Even though 
 logical operators have a higher priority, they, unlike booleans, do not do "short-circuit"-ing which means that even if 
