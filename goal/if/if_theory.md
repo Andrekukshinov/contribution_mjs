@@ -80,31 +80,22 @@ in different parts is separate one from another, and it never crosses.
 
 Important Thing to mention is that braces can be skipped:
 
-    if(false) 
-        System.out.println("The statement is true");
-    System.out.println("I'm out of checking");
 
-In this case only 'System.out.println("The statement is true");' belongs to block of code to be executed if statement is
-true, and 'System.out.println("I'm out of checking");' will be _always_ printed.
 ***
 
-# Booleans 
 
-In any example with "if" blocks you are likely to see something called as "condition", and it is usually used to check 
-the result of some expression, whether it's true or not. And there's a special primitive variable type in java for 
-such cases, which is called **boolean**. This type may contain only 2 values: **true** or **false**. To create
-such variable you need to declare its type as boolean:
-
-    boolean isEven = true;
-
-Another important thing here is that it also can(and it usually does) contain the result of some operations:
-
-    int five = 5;
-    boolean isEqualToZero = five == 0;
-
-in this case we expect our boolean isEqualToZero to contain the result of expression(five == 0) and the actual result depends
-on "five": if the variable is zero then isEqualToZero is true. For our case the result of expression is false as 5 is
-obviously not zero. 
+####Tasks:
+1. create a linear task with true in if condition
+2. create a linear task with false in if condition and use else block
+3. if(false) 
+        System.out.println("The statement is true");
+   System.out.println("I'm out of checking");
+4. int x = 50;
+   int y = 50;
+   __ (x __ y) {
+          System.out.println("Hello World");
+   }
+5. create a program that consumes user input(number) from keyboard and tells if the number is positive (read about Scanner in java)
 ***
 
 
@@ -192,6 +183,12 @@ variable on the left-hand side is more OR equals to the right one the result is 
 like:
 "Is 5 more OR equals to 5?"
 
+#####tasks
+1. Take three numbers from the user and print the greatest number.
+2. create a program that takes char and tells if it is ENG char or no
+3. takes a number 0..100, >? => orel reshka  
+4. complete the code so that it builds
+
 ***
 # Multiple conditions within one if block
 
@@ -252,7 +249,14 @@ The result of that expression is true as 9 doesn't equal to 0 => which makes thi
 using !(not) operator false becomes true(not false => true).
 
 ***
-
+####tasks
+1. tell the name of a season by number of a month
+2. take 2 numbers from user tell if one is "kraten" to another
+3. number vampires??
+4. Program to take a value from the user as input the basic salary of an employee and calculate its Gross salary according to the following: Basic Salary <= 10000: HRA = 20%, DA = 80%………………………………..Basic Salary <= 20000 : HRA = 25%, DA = 90%………………………………Basic Salary > 20000 : HRA = 30%, DA = 95%.
+5. Program to check whether a number is divisible by 5 and 11 or not by using if-else
+6. Program to take a value from the user as input any alphabet and check whether it is vowel or consonant
+7. Program to take a value from the user as input the month number and print number of days in that month
 
 # Speeding up the calculations
 
@@ -274,6 +278,7 @@ Find positive OR above 5 number. Picked number is 2, which is even, and it suits
 number, and we can stop checking here!
 
 ![img_7.png](img_7.png)
+
 
 ***
 
@@ -319,6 +324,16 @@ performance(or at least it's so small that can be ignored). So when you chose be
 you have to worry about is readability. Sometimes, being verbose in terms of writing code is more efficient than writing
 less code, as code is written once, but it's read dozens times. Which means that it's better to use if-else block when
 executed blocks of code consist of more than one statement.
+
+####tasks
+1. create a task with ||
+2. create a task with &&
+3. create a task with  || &&
+4. complete the statement up to ternary 
+5. rewrite some task with ternary operator
+6. sout ternary result
+7. assign ternary result
+8. ternary max out of three
 ***
 
 # Multiple if cases
@@ -380,7 +395,7 @@ This construction consists of several parts:
 1. "switch" statement itself, which says that construction begins.
 2. "statementToCompare" which is passed to this switch statement to be compared with all the rest "matchingValue"'s.
 3. "case" which compares statementToCompare with the  "matchingValue", and if they are equal executes "codeBlock" .
-4. "break" means that execution of switch statement must end here.
+4. "break" means that execution of switch statement must end here and proceed outside of switch.
 5. "default"  is responsible for executing the code block if all the rest conditions are false.
 
 But switch statement has some limitations, it is able to compare and work with:
@@ -471,6 +486,14 @@ then compares that with the options within "case" blocks, and when those values 
 This means the following: if the value eqauls to 1, 2, 12 => execute that block of code (it's common for all of that 
 cases) and it's the same for all the rest options.
 
+####tasks
+1. make it compile(miss default)
+2. make correct output (remove break)
+3. rewrite with switch
+4. Program to find the maximum between three numbers. Using the switch statement.
+5.  Program to check whether a year is a leap year or not.
+
+
 So what should happen if we do not set break to any of the statements? (self exploring section).
 
 ####What was new in further java versions with switch
@@ -495,6 +518,9 @@ be assigned? Dependent on the value of "count" either 12 or 0 will be assigned t
 the first block of code is executed output will be "1" and toBeAssigned will become 12. Otherwise, the other block will
 be involved, toBeAssigned will be 0.
      
+####tasks 
+1. assign the value to var
+2. sout value from switch
 ***
 
 #Logical vs boolean
@@ -589,7 +615,8 @@ And all those operands can be applied to boolean variables:
 
       //*: false true true
 
-
+####tasks
+tasks for demo of those operators?
 ***
 #Difference between booleans and logical operators
 
@@ -597,3 +624,26 @@ It's always better to use boolean operators. Even though
 logical operators have a higher priority, they, unlike booleans, do not do "short-circuit"-ing which means that even if 
 in statement with (logical AND)& the first expression is false it will still calculate the right-had side, 
 when boolean conditions do not do extra calculations if not necessary.
+
+
+##FINAL TASK
+1. tell the name of a season by number of a month
+2. swap 2 variables without creating new variables or objects(^)
+3. Program to find the maximum between three numbers. Using the switch statement.
+4. Program to check whether a year is a leap year or not.
+5. create a task with  || &&
+6. create some task that can potentially w8 for student's value to get correct answer
+7. Program to take a value from the user as input the month number and print number of days in that month
+8. take 2 numbers from user tell if one is "kraten" to another
+9. number vampires??
+
+
+
+Task for review(tell the name of a season by number of a month):
+Seasons. User should be able to input ordinal number of month from 
+keyboard and as a result of program execution the name of the season
+should be displayed. Program should be implemented in the main method
+of Season class under the package com.epam.cources.if.final.task. 
+If the input is invalid user should see the error message:
+"Number %n is has no corresponding month number!"
+//to mock System.in this link https://stefanbirkner.github.io/system-rules/ + https://mvnrepository.com/artifact/com.github.stefanbirkner/system-rules
