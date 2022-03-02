@@ -20,6 +20,8 @@ there are mistakes, but computers do not accept syntax mistakes, and they refuse
 not consider them). This is the reason why knowing and understanding programming syntax is one of the first steps on
 programming road. 
 
+----------------------------------------------------------------------------------------------------------------
+
 #Java syntax
 Each programming language has its own rules of writing code, so java does too. 
 
@@ -52,13 +54,20 @@ logics is kept, the line is called an expression, it's a command/set of commands
 Every expression ends with semicolon, this symbol simply means the end of statement, just like written
 languages have dots at the end of the sentence, programming languages use semicolons for the same purposes. 
 It's the representation of any expression ending. And the whole line (ending with semicolon) is an action to be performed
-by Java.
+by Java. This particular line is responsible for writing the text on the console.
 
 Purpose of curly brakes is gonna be uncovered later in this chapter.
 
 In this module we have got acquainted with key points in java syntax,and also we've seen a program example.
 
 
+Tasks:
+1) Fill in the gaps to make an application write data to console
+2) make console output like: "java" + \n "is" + \n +"smth"
+3) create main method and make console output:"This is my first Java program"
+4) given piece of code:(not compiling one), fill everything that is missing for the program and compile and build it.
+5) update this class to make an output: "I'm updated." + \n "can be compiled. And can write to console"
+-- PURE THEORY 
 
 #Java key points
 
@@ -154,6 +163,14 @@ for variables naming in java:
    For lengthy variables names that has more than one words do it like this: int smallNumber; int bigNumber;
    (start the following word with capital letter).
 4) Variable names are case sensitive in Java, which means that number and nUmber - are different variables.
+
+
+Tasks: 
+1) Create 3 int variables with names: first, second, third. Initialize them with values = 1, 10, 100. Make console 
+outputs for all of them on one line (with no spaces between)
+2) Declare another 3 variables: linkToFirst, linkToSecond, linkToThird. Make console output of 3 initial vars(first,
+second, third) on the new line. Initialize vars  linkToFirst, linkToSecond, linkToThird with the variables first, second,
+third. Reassign (first, second, third) with the : 15, 6, 4. And write to console all the variables. 
 
 ##Java primitives
 
@@ -381,6 +398,8 @@ value. So the following is gonna be the same:
 Besides, char is able to handle also ASCII, and it has special combination of symbols:
 
     char myChar = '\u0054';
+
+tasks: https://www.w3schools.com/java/java_data_types.asp
 
 ##Operators
 Any program aims to solve some task, and usually the tasks are aimed to perform some actions on the data that we have:
