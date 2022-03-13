@@ -521,9 +521,8 @@ already seen is used to associate literal with identifier.
 
 Tasks:
 1) converter (sec -> mins) + Scanner
-2) revert the number
+2) write down the formula
 3) int 9/5
-4) write down the formula
 
 ###**Advanced operators**
 
@@ -624,17 +623,19 @@ to use circle brackets.
 
 tasks:
 1) 19.7 -> int + find a way to perform a correct casting (rounding)
-2) chose the necessary primitive type to make it work X\0.
+2) exercise pre and post increments
 3) sout(3*4 + " " + 9)
-4) if number is positive -> sout true, otherwise false (no if)
-5) exercise pre and post increments
-6) operator precedence task
+4) operator precedence task
 
 
 ##FINAL MODULE TASK
 1) make sout false, using  9, -17
 2) assign 300 to byte and multiply it by 4 and see the result
-
+3) choose the necessary primitive type to make it work X\0.
+4) if number is positive -> sout true, otherwise false (no if)
+5) revert the number
+6) find the sum of all digits in a number
+7) write down the formula
 ------------------------------------------------------------
 
 5) intro to java key points(identifiers, literals, variables, primitives, types, visibility scopes ):
