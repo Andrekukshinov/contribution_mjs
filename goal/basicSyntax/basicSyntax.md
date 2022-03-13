@@ -67,7 +67,6 @@ Tasks:
 3) create main method and make console output:"This is my first Java program"
 4) given piece of code:(not compiling one), fill everything that is missing for the program and compile and build it.
 5) update this class to make an output: "I'm updated." + \n "can be compiled. And can write to console"
--- PURE THEORY 
 
 #Java key points
 
@@ -110,6 +109,16 @@ reason why java expects to see identifier after certain combination of keywords.
 
 Those words cannot be used for names of literals, variables, classes, methods etc. the main reason for that is that java
 looks for such words to understand what a programmer wants, it's a tool for creating commands for java to perform.
+
+
+Tasks:
+1) make the program work (var starts with 1, $, % etc);
+2) make the program work (vars have the same names);
+3) make the program correspond to java code conventions(snake case to camel case, 1st capital letter of a var name,
+   java keyword as an identif., crappy name (not corresponsive name, 1 char name)).
+4) make the program correspond to java code conventions*(method, class, field names...)
+5) ![img_24.png](img_24.png)
+
 
 #Java variables
 
@@ -165,12 +174,27 @@ for variables naming in java:
 4) Variable names are case sensitive in Java, which means that number and nUmber - are different variables.
 
 
+####Literals
+Before diving into numeric primitives theory it's good to take a look at the "literal" definition. So literals are simply
+the values that are associated with the identifiers that are given to them:
+
+    int t = 1;
+
+So here the literal is **1** and it's of an integer type, identifier here is _t_. So essentially, literals are the values
+that are stored in variables.
+
+
 Tasks: 
+
+-1) make the program work, semi column lost.
+0) Declare 3 int variables within one statement and call them a, b, c. Initialize them in one statement with value "10".
+ write to console one of them.
 1) Create 3 int variables with names: first, second, third. Initialize them with values = 1, 10, 100. Make console 
 outputs for all of them on one line (with no spaces between)
 2) Declare another 3 variables: linkToFirst, linkToSecond, linkToThird. Make console output of 3 initial vars(first,
-second, third) on the new line. Initialize vars  linkToFirst, linkToSecond, linkToThird with the variables first, second,
-third. Reassign (first, second, third) with the : 15, 6, 4. And write to console all the variables. 
+second, third) each on new line. Initialize vars  linkToFirst, linkToSecond, linkToThird with the variables first, second,
+third. Reassign (first, second, third) with the : 15, 6, 4. And write to console all the variables, each on new line.
+
 
 ##Java primitives
 
@@ -195,17 +219,6 @@ allocated for storing values. Data types that are predefined by java for the mos
 primitives. Java has 8 primitive data types namely byte, short, int, long, float, double, char and boolean. Sometimes 
 this set of data types is not enough in programming, so java provides you with an opportunity to create your own type, 
 the way of doing that will be introduced later in the future. 
-
-####Literals
-Before diving into numeric primitives theory it's good to take a look at the "literal" definition. So literals are simply 
-the values that are associated with the identifiers that are given to them:
-
-    int t = 1;
-
-So here the literal is **1** and it's of an integer type, identifier here is _t_. So essentially, literals are the values 
-that are stored in variables. 
-
-??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? There's another reason why these 8 types are called primitives: they are the building blocks for custom data types
 
 
 ##"_Numeric_" primitives
@@ -239,6 +252,11 @@ memory, still using the most suitable container for the value is a mandatory rul
 
 So if you  want to see the reason why numbers depend on size, and how size is related to min & max values, you can take
 a look at an advanced chapter:
+
+##########pure theory
+
+
+-------------------------------
 
 ####Explanation why integer types have different size
 
@@ -282,6 +300,10 @@ Each data type has its size in bytes, which leads us to the point of determining
 4) Long: from -2^63 to 2^63 -1
 
 Double and float have a bit different way of managing the data. It will be described in advanced chapters.
+
+-- PURE THEORY
+
+------------------------------
 
 ###Byte(task with declaring reassigning, wrong type assigment, delayed assigment, wrong reassigment)
 
@@ -399,6 +421,13 @@ Besides, char is able to handle also ASCII, and it has special combination of sy
 
     char myChar = '\u0054';
 
+
+Tasks:
+1) create long variable(first - name) with "1000" value. Assign to the variable another var, int(second - name). Update
+   the first, print both.
+2) complete the code snippet below with corresponding types
+3) print chars :'c', 'h', 'a', 'r' using int representation.
+4) 'true' - char + 'false' - boolean
 tasks: https://www.w3schools.com/java/java_data_types.asp
 
 ##Operators
@@ -490,6 +519,11 @@ There are 2 operators which look different from math signs: equals operator(==) 
 equals in java consists of 2 equal signs is because a single one in java is an **assignment operator**, which, as you've
 already seen is used to associate literal with identifier.
 
+Tasks:
+1) converter (sec -> mins) + Scanner
+2) revert the number
+3) int 9/5
+4) write down the formula
 
 ###**Advanced operators**
 
@@ -586,6 +620,20 @@ The same as if you are performing certain operations over numbers in math, some 
 happening with the help of operators in java. And if you declare them in a wrong order that might impact you expected 
 result and produce unexpected behaviour and bugs. The best tactics if you do not remember the priority for operator is 
 to use circle brackets.
+
+
+tasks:
+1) 19.7 -> int + find a way to perform a correct casting (rounding)
+2) chose the necessary primitive type to make it work X\0.
+3) sout(3*4 + " " + 9)
+4) if number is positive -> sout true, otherwise false (no if)
+5) exercise pre and post increments
+6) operator precedence task
+
+
+##FINAL MODULE TASK
+1) make sout false, using  9, -17
+2) assign 300 to byte and multiply it by 4 and see the result
 
 ------------------------------------------------------------
 
