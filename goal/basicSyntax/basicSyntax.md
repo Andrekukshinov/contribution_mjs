@@ -636,6 +636,7 @@ tasks:
 5) revert the number
 6) find the sum of all digits in a number
 7) write down the formula
+8) temperature converter 
 ------------------------------------------------------------
 
 5) intro to java key points(identifiers, literals, variables, primitives, types, visibility scopes ):
