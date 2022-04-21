@@ -2,9 +2,19 @@
 Before diving into "loops", make the console output with the words: "writing the same code doesn't have much impact, and
 it's also time-consuming" for 20 times.
 
+####Task
+Repeat is bad. Create a program that will make console output for 20 times, saying:
+"writing the same code doesn't have much impact, and it's also time consuming".
+No loops, streams are allowed. The task should be implemented inside of repeatIsBad() of code snippet:
+
+    public class Main {
+        public void repeatIsBad(){
+            //write your code here
+        }
+    }
+
 ###Place for task
 ***next page***
-
 ###Plain task solution
 You must have got something like this:
 
@@ -80,6 +90,24 @@ counter.
 After taking a look at "while" loop, this task becomes much less time-consuming, and also we almost don't have 
 limitations on the amount of repetitions, which can save much time for us.
 
+###Tasks:
+1. NaturalNumbers. Write a program that will write to console numbers from zero to the number from method arguments.
+2. EvenNumbers. Write a program that will write to console even numbers from zero to the number from method.
+3. Multiplication. Write a program that will write to console multiplied numbers by input from zero to the number from method.
+4. WordsBuilder. Write a program that will build a phrase from given chars (char...). !HINT check size() method in google! 
+5. SimpleNumbers. Find all simple numbers from 0 up to input.
+6. Factorial.
+7. PowerOfTwo. Write a program that will take *int power* as an argument. This argument will be used to calculate power 
+of 2. The program should write to console each power of 2 beginning from 2^0...2^power. Write the program using "while":
+
+
+    public class Main {
+        public void powerOfTwo(int power){
+            //write your code here
+        }
+    }
+
+
 ***
 ###For
 
@@ -110,6 +138,16 @@ after the code block with the logics itself is finished.
 Also, the last "increment" statement usually interacts with the counter, so as to be able to break the loop once we need,
 those interactions can be different: we can multiply, divide , decrease the counter(any math operation can be applied).
 
+
+###Tasks:
+1. Alphabet. Write a program that will write to console English alphabet.
+2. Square. Write a program that will write to console an empty square of a given size(it should consist of '8'-s).
+3. Cross. Write a program that will write to console a cross of a given size(it should consist of '8'-s).
+4. Triangle. Write a program will write to console a rectangular triangle(cathetus should be of a given size) of a given 
+length(it should consist of '8'-s). 
+5. Hourglass. Write a program write to console filled Hourglass of a given length(it should consist of '8'-s).
+6. Rectangle. Write a program write to console an empty rectangle of a given sizeS(it should consist of '8'-s).
+7. **REVERT STRING**. It's allowed to use only loops and no special methods like:String.revert(), ... 
 
 ***
 ###While vs For
