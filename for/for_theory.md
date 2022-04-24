@@ -140,14 +140,13 @@ those interactions can be different: we can multiply, divide , decrease the coun
 
 
 ###Tasks:
-1. Alphabet. Write a program that will write to console English alphabet.
-2. Square. Write a program that will write to console an empty square of a given size(it should consist of '8'-s).
-3. Cross. Write a program that will write to console a cross of a given size(it should consist of '8'-s).
-4. Triangle. Write a program will write to console a rectangular triangle(cathetus should be of a given size) of a given 
-length(it should consist of '8'-s). 
-5. Hourglass. Write a program write to console filled Hourglass of a given length(it should consist of '8'-s).
-6. Rectangle. Write a program write to console an empty rectangle of a given sizeS(it should consist of '8'-s).
-7. **REVERT STRING**. It's allowed to use only loops and no special methods like:String.revert(), ... 
+1. Range sum. Write a program that will find the sum between numbers with in the range.
+2. Alphabet. Write a program that will write to console English alphabet.
+3. GCD. Write a program that will find the Greatest Common Divisor (GCD) of two numbers
+4. **REVERT STRING**. It's allowed to use only loops and no special methods like:String.revert(), ...
+5. Digits sum. Write a program that will find the sum of digits of a given number
+6. 9-s sum. Write a program that will display the sum of the series [ 9 + 99 + 999 + 9999 ...]
+7. Fibonacci. Write a program that will  display the first n terms of Fibonacci series.
 
 ***
 ###While vs For
@@ -181,6 +180,13 @@ Count the amount of even numbers from -5 to 17:
 
 Here we go from -5 to 17 inclusive and each time the number is even we increase counter.
 
+
+####Tasks
+REWRITE:
+1. (for) WordsBuilder. Write a program that will build a phrase from given chars (char...).
+2. (for) EvenNumbers. Write a program that will write to console even numbers from zero to the number from method.
+3. (while) Alphabet. Write a program that will write to console English alphabet.
+4. (while) Digits sum. Write a program that will find the sum of digits of a given number
 ***
 ###Do-while
 Do-while loop is a bit different from "while" and "for" as this loop literally says:" before checking the condition 
@@ -278,6 +284,15 @@ the command (or the flag) for java to stop code execution within switch statemen
 here the logics is the same.
 
 
+####TASKS:
+1. Fix the code. (Write anything after break).
+2. 3.Write a program that will print all numbers from zero up to given, skipping each 3rd.
+3. Sum of skipped. Write a program that will consume 2 args: the first is number to skip, the second to iterate till. 
+Program should count sum of all skipped numbers.
+4. Number to break. Write a program that will consume 2 args: the first is number to break on, the second to iterate till,
+if number to iterate till is less than to break with -> sout("iterating till the end") and print all the numbers till 
+the end, otherwise all numbers till toBreakWith.
+
 ***
 ###Infinite loops
 Basically, the main job of any loop is to run the same block of code definite amount of times, this is achieved
@@ -359,6 +374,15 @@ the inner one. Having this information about iteration step of inner and outer o
 Iterations will proceed running until the conditions are true, but controlling those iterators we can reach any point 
 of the plane.
 
+####Tasks
+1. Square. Write a program that will write to console an empty square of a given size(it should consist of '8'-s).
+2. Cross. Write a program that will write to console a cross of a given size(it should consist of '8'-s).
+3. Triangle. Write a program will write to console a rectangular triangle(cathetus should be of a given size) of a given
+   length(it should consist of '8'-s).
+4. Hourglass. Write a program write to console filled Hourglass of a given length(it should consist of '8'-s).
+5. Rectangle. Write a program write to console an empty rectangle of a given sizeS(it should consist of '8'-s).
+6. Pyramid. Write a program that will print :![img_9.png](img_9.png)
+
 ***
 ###Go to 
 There was such an operator in procedural programming such as go to, (which made program go to a certain point of code and
@@ -368,3 +392,30 @@ are labels, we will not study them in terms of this course, as they are not used
 usage is harmful for common programming principles, you should avoid using them when writing code, and creating your 
 architecture, so as to not use them at all, but at the same time you should be aware of it. If you want to know about 
 them more, do some research on your own.
+
+
+###FINAL TASK
+1. Multiplication table. Write a program that prompts the user to input a positive integer. It should then print the multiplication table of that number.
+2. First 'n' last. Write a program that will find the sum of first and last digit of a number
+3. Pyramid. Write a program that will print :![img_8.png](img_8.png)
+4. Power. Write a program that will find power of any number using for loop
+5. 6. 9-s sum. Write a program that will display the sum of the series [ 9 + 99 + 999 + 9999 ...]
+6. 4. **REVERT STRING**. It's allowed to use only loops and no special methods like:String.revert(), ...
+7. Compute the natural logarithm of 2, by adding up to n terms in the series 1 - 1/2 + 1/3 - 1/4 + 1/5 -... 1/n
+8. Inside break. 2 args nested loop iteration printing a matrix without given number.
+9. Frequency. Write a program that will find the frequency of each digit in a given integer
+10. Diamond.  display the pattern like a diamond. Go to the editor
+    Sample Output:
+    Input number of rows (half of the diamond): 5
+
+ ```  
+        *
+       ***                                                                 
+      *****                                                                
+     *******                                                               
+    *********                                                              
+     *******                                                               
+      *****                                                                
+       ***                                                                 
+        *  
+```
