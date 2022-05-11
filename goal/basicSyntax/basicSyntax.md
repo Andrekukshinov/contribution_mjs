@@ -62,11 +62,60 @@ In this module we have got acquainted with key points in java syntax,and also we
 
 
 Tasks:
-1) Fill in the gaps to make an application write data to console
-2) make console output like: "java" + \n "is" + \n +"smth"
-3) create main method and make console output:"This is my first Java program"
+1) Fill in the gaps to make an application write data to console: fill the gaps to print "Fixed" to console with a new line.
+Use code snippet provided here:
+
+     
+    public class FillGapsApp {
+        public static void main(String[] args) {
+                  .           ("Fixed");
+        }
+    }
+
+
+2) make console output like: "java" + \n "is" + \n +"smth". Create java program that will write to console:
+java
+is
+smth
+For that use the following code snippet:
+
+
+    public class PrintWordsApp {
+        public static void main(String[] args) {
+            //write your code here
+        }
+    }
+
+3) create main method and make console output:"This is my first Java program". Create java program that will write to 
+console:
+This is my first Java program
+For that use the following code snippet:
+
+
+    public class PrintSentenceApp {
+    }
+
+
 4) given piece of code:(not compiling one), fill everything that is missing for the program and compile and build it.
+Do that inside of a code snippet here:
+
+
+    public class BrokenApp {
+        public main(String args) {
+            System.out,println("fixMe)
+        }
+    }
+
 5) update this class to make an output: "I'm updated." + \n "can be compiled. And can write to console"
+The code to be updated is inside of a code snippet:
+
+
+    public class UpdatedApp {
+        public static void main(String[] args) {
+            System.out.println("fixMe");
+        }
+    }
+
 
 #Java key points
 
@@ -113,11 +162,85 @@ looks for such words to understand what a programmer wants, it's a tool for crea
 
 Tasks:
 1) make the program work (var starts with 1, $, % etc);
+Update given code so as to be able to compile it:
+
+
+    public class JavaVariableNames {
+        public static void main(String[] args) {
+            int 2morrow = 0;
+            int $money = 10;
+            int %hundred = 100;
+            int !back = 1000;
+            int _underscore = 10000;
+            int #sharp = 100000;
+            int *star = 1000000;
+            int BADEXAMPLEOFVARNAME = 1000000;
+        }
+    }
+
+
 2) make the program work (vars have the same names);
+   Update given code so as to be able to compile it:
+
+
+    public class CopiedNames {
+        public static void main(String[] args) {
+            int variable = 0;
+            int variable = 2000;
+            int value = 1000;
+            int variable = 4000;
+            int value2 = 3000;
+            int variables = 5000;
+            variables = 7000;
+            int value = 90000;
+            int int = 100000;
+            int my integer = 1000000;
+            int my+var = 1234567;
+            int my__-__integer = 1234567;
+        }
+    }
+
 3) make the program correspond to java code conventions(snake case to camel case, 1st capital letter of a var name,
    java keyword as an identif., crappy name (not corresponsive name, 1 char name)).
-4) make the program correspond to java code conventions*(method, class, field names...)
-5) ![img_24.png](img_24.png)
+   Update given code so that it is corresponding to java name conventions, following the case of variables (if the 
+variable in example is in snake case this should be followed):
+
+
+    public class NamingConvention {
+        public static void main(String[] args) {
+             int _variable = 10;
+             int variable_One = 1;
+             int variableTwo = 2;
+             int variable_three = 3;
+             int VARIABLEFOUR = 4;
+             int VARIABLEfIVE = 5;
+             int VariableSix = 6;
+             int variableseven = 7;
+             int VariableEight = 8;
+        }
+    }
+
+
+
+
+4) (After advanced reading about java naming conventions )In the given code snippet make the program correspond to java
+code conventions*(method, class, field names...):
+
+
+    public class advancedNamingConvention {
+        private static final int adult_age = 18;
+    
+        private int AGE;
+        private int phoneNumber;
+    
+        void CAllToFriend() {
+            //some code
+        }
+    
+        void callByNumber(int Number) {
+            //some code
+        }
+    }
 
 
 #Java variables
@@ -186,14 +309,45 @@ that are stored in variables.
 
 Tasks: 
 
--1) make the program work, semi column lost.
-0) Declare 3 int variables within one statement and call them a, b, c. Initialize them in one statement with value "10".
- write to console one of them.
-1) Create 3 int variables with names: first, second, third. Initialize them with values = 1, 10, 100. Make console 
-outputs for all of them on one line (with no spaces between)
-2) Declare another 3 variables: linkToFirst, linkToSecond, linkToThird. Make console output of 3 initial vars(first,
-second, third) each on new line. Initialize vars  linkToFirst, linkToSecond, linkToThird with the variables first, second,
-third. Reassign (first, second, third) with the : 15, 6, 4. And write to console all the variables, each on new line.
+//-1) Create 4 variables, call them fist second third 
+
+
+
+1) Basic variable initialization. Create 3 int variables with names: first, second, third. Initialize them with 
+values: 1, 10, 100. Make console outputs for all of them, each on new line. Implement the program
+inside of given code snippet: 
+
+
+    public class BasicVariablesInitialization {
+        public static void main(String[] args) {
+             //write code here
+        }
+    }
+
+2) One-line variable declaration and initialization.  Declare 3 int variables within one statement and call them a, b, c(order must be followed). Initialize them in one 
+statement with value "10". Print to console "c". Implement the program inside of given code snippet:
+
+
+    public class DeclaringVars {
+       public static void main(String[] args) {
+            //write code here 
+       }
+    }
+
+
+3) Reassigning references. Declare another 3 variables: first, second, third(1,10,100). Make console output of 3 
+initial vars(first, second, third) each on new line. Initialize vars  linkToFirst, linkToSecond, linkToThird with the 
+variables first, second, third. Reassign (first, second, third) with the : 15, 6, 4. And write to console all the 
+variables(in the order they were declared), each on new line. Pay attention to results. 
+Implement the program inside of given code snippet:
+
+
+    public class ReassigningValues {
+       public static void main(String[] args) {
+            //write code here 
+       }
+    }
+
 
 
 ##Java primitives
@@ -423,12 +577,42 @@ Besides, char is able to handle also ASCII, and it has special combination of sy
 
 
 Tasks:
-1) create long variable(first - name) with "1000" value. Assign to the variable another var, int(second - name). Update
-   the first, print both.
-2) complete the code snippet below with corresponding types
-3) print chars :'c', 'h', 'a', 'r' using int representation.
-4) 'true' - char + 'false' - boolean
-tasks: https://www.w3schools.com/java/java_data_types.asp
+1) Types setting. Complete the code snippet below with corresponding types. Each var type should consume as less
+ as possible e.g.: 2345 - suits to short. Code snippet:
+
+
+        public class SettingTypes {
+            public static void main(String[] args) {
+                 first = 10_000_000_000L;
+                 second = 'a';
+                 third = 5 > 9;
+                 forth = 12.90434323324342;
+                 fifth = 12.3F;
+                 sixth = 1;
+                 seventh = 129;
+            }
+        }
+
+2) Int representation. Print chars :'c', 'h', 'a', 'r' using int representation. Implement program in the following code
+snippet:
+
+
+        public class IntRepresentation {
+            public static void main(String[] args) {
+            }
+        }
+
+
+3) Formula. Declare all necessary variables and write down the formula using corresponding names
+ (declare those vars before the formula):
+![img_26.png](img_26.png)
+Implement program using the following code snippet:
+
+   
+    public class FormulaCreator {
+        public static void main(String[] args) {
+        }
+    }
 
 ##Operators
 Any program aims to solve some task, and usually the tasks are aimed to perform some actions on the data that we have:
@@ -520,9 +704,41 @@ equals in java consists of 2 equal signs is because a single one in java is an *
 already seen is used to associate literal with identifier.
 
 Tasks:
-1) converter (sec -> mins) + Scanner
-2) write down the formula
-3) int 9/5
+1) Converter. Implement a program that will convert minutes to seconds and print it console. Implement program in the
+code snippet below:
+
+
+    public class TimeConvertor {
+        public void convert(float minutes) {
+        }
+    }
+
+where minutes - variable to be converted.
+
+
+
+3) Create 3 int variables with names: first, second, third. Initialize them with values = 1, 10, 100. Print all of them
+      to console within one System.out.println statement(with no spaces between). Implement program in scope of the 
+      following code snippet:
+    
+   
+        public class ThreeStuckVars {
+           public static void main(String[] args) {
+           }
+        }
+
+
+4) Broken calculator. Create a program that will perform simple division of numbers, you will be given a number and 
+your task will be to create a program that number by 5 and print correct result:
+
+
+    public class NumberDivider {
+        void divide(int toBeDivided) {
+        }
+    }
+
+where toBeDivided - variable to be divided.
+
 
 ###**Advanced operators**
 
@@ -622,20 +838,94 @@ to use circle brackets.
 
 
 tasks:
-1) 19.7 -> int + find a way to perform a correct casting (rounding)
-2) exercise pre and post increments
-3) sout(3*4 + " " + 9)
-4) operator precedence task
+0) Integer type casting. Create long variable(first - name) with "1000" value. Assign to the variable another var, int(second - name). Update
+      the first, print both. Implement task in the given code snippet:
 
+
+      public class VariableTypes {
+          public static void main(String[] args) {
+          }
+      }
+
+
+
+1) Float type casting. You will be given a float number, and your task will be to find a correct way to round this
+ variable to integer variable, corresponding to Math rules(requires googling). Print that variable to console .Implement
+  program inside of a code snippet given below:
+
+
+        public class FloatTypeCasting {
+            public void roundNumber(float numberToBeRounded) {
+            }
+        }
+
+where float numberToBeRounded - is the variable which needs to be rounded.
+
+
+2) PrePost increments. You will be given a code snippet, and you task will be to get expected result by inserting correct
+ pre/post increment oprators to specified variables. Implement the task in the following code snippet:
+
+
+        public static void main(String[] args) {
+                int a = 5;
+                int b = 7;
+                int c = 12;
+                int d = 15;
+
+                // use post-increment operator in the mathematical expression
+                int x =   a   + b +   c   + d;
+                System.out.println("Expected c is 40, c = " + c);
+                // print the updated value of a, b, c, and d
+                System.out.println("The updated value of a = " + a + ", b = " + b + ", c = " + c + " and d = " + d);
+
+            }
+
+Expected results: x is expected to be 40, the rest but b and d to be incremented.
+
+
+4) Operator precedence. Introduce changes(add brackets) to code snippets below to get expected results:
+
+
+        public class OperatorPrecedence {
+            public static void main(String[] args) {
+                int first = 1;
+                int second = 2;
+                int eight = 3 + first * second;
+                System.out.println(eight);//eight is expected to be 8
+                boolean firstBool = false;
+                boolean secondBool = false;
+                boolean thirdBool = 1 == 1;
+                boolean fourthBool = 4 <= 101;
+                int varSix = 17;
+
+                System.out.println(firstBool && secondBool || thirdBool && fourthBool || (varSix = 5) > 0);
+                System.out.println(varSix);
+            }
+        }
+
+Expected console output:
+8
+false
+5
 
 ##FINAL MODULE TASK
-1) make sout false, using  9, -17
+1) Print false. You will be given 2 variables and your task will be to print false using those vars:
+
+
+        public class PrintingFalse {
+            public static void main(String[] args) {
+                int first = 9;
+                int second = -17;
+                //write code here
+            }
+        }
+
+
 2) assign 300 to byte and multiply it by 4 and see the result
 3) choose the necessary primitive type to make it work X\0.
 4) if number is positive -> sout true, otherwise false (no if)
 5) revert the number
 6) find the sum of all digits in a number
-7) write down the formula
 8) temperature converter 
 ------------------------------------------------------------
 
