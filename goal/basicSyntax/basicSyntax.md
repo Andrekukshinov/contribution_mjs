@@ -778,8 +778,6 @@ from converted type -> it makes programmer to do conversion explicitly:
     double myDouble = 9.78d;
     int myInt = (int) myDouble;
 
-//   9/5?
-
 ###Operators and types
 As it was mentioned above java has several numbers of data types, and operators aim to work with them. So dependent on the
 type, the same operator can perform different actions: plus operator(+) can be used with numbers and with strings.
@@ -883,7 +881,7 @@ where float numberToBeRounded - is the variable which needs to be rounded.
 Expected results: x is expected to be 40, the rest but b and d to be incremented.
 
 
-4) Operator precedence. Introduce changes(add brackets) to code snippets below to get expected results:
+3) Operator precedence. Introduce changes(add brackets) to code snippets below to get expected results:
 
 
         public class OperatorPrecedence {
@@ -920,54 +918,58 @@ false
             }
         }
 
+2) Division by zero. In the given code snippet you should pick correct primitive type to allow division by zero.
 
-2) assign 300 to byte and multiply it by 4 and see the result
-3) choose the necessary primitive type to make it work X\0.
-4) if number is positive -> sout true, otherwise false (no if)
-5) revert the number
-6) find the sum of all digits in a number
-8) temperature converter 
-------------------------------------------------------------
+    
+        public class DivisionByZero {
+            public static void main(String[] args) {
+                _ number = 10;
+                System.out.println(number/0);
+            }
+        }
 
-5) intro to java key points(identifiers, literals, variables, primitives, types, visibility scopes ):
-   3.1) java lang base (what does it consist of: keywords, names, operators)
-   3.2) types, primitives,
-6) deeper about types **advanced parts**
-7) operators
-8) priorities
-9) 9/5
-10) visibility scopes
+Instead of "_" sign set correct var type
+
+3) Positive numbers detector. Implement program that will print if number is positive true, otherwise false
+(no if or ternary). Code snippet:
 
 
-As you can see the first statement of program is *package*, it's an optional statement, which is required only for the
-cases when program file is not straight under java folder, and in example above this file would be under main, which in
-turn, is under java folder: java -> main. Showing path is not the only usecase for package, there are other reasons for
-declaring that, you will get acquainted later in that module, for now knowing that this is the name of the folder is enough.
+    public class NumbersPrinter {
+        public void printIsPositive(int number) {
+    
+        }
+    }
 
-![img_12.png](img_12.png)
+Where number - variable that should be used within the program.
 
-The second is *import* statement. The majority of programs rely on the code that has already been written, and we need
-a way to reuse that code, because otherwise all programs would be not readable and maintainable, as they would contain
-millions lines of duplicated code. But copying and pasting the same code is only the side of the problem, as code needs
-to be updated, and if some lines of legacy code would require updates, that wouldn't be possible to do that, besides, if
-project were flexible for reuse, there would be a request for a convenient way of using that anywhere, where required,
-So this is where *import* statement comes in handy. It just literally says: take this file and make all allowed components
-available for using.
+4) Numbers reverter. Revert 3-digit number that will be passed(e.g.: given -> 489, expected -> 984). Code snippet:
 
 
+        public class NumberReverter {
+            public void revert(int number) {
+            }
+        }
+Where number - variable that should be used within the program.
+
+5) Digits sum calculator. You will be given a four-digit number your task will be to find the sum of all digits in the
+given number. Code snippet:
 
 
-There's another thing to mention, about this line, this is opening curly brace, which is marked as visibility scope on the
-picture: *{* it's a kind of, a boarder that separates one list of statements from another. Just like walls in real life
-that help split cottage areas from each other, which adds some protection and privacy, it also hides everything which
-is not only not allowed to see. This is what for those braces are responsible for.
+        public class DigitsSumCalculator {
+            public void calculateSum(int number) {
+            }
+        }
 
-Another thing to mention, about that example is that not each line starts from the beginning of row, this is used to
-make code more readable. This is called *tabulation*, as each line that is inside _*{*_ lies further from beginning of the
-row on 1 tab symbol for each not closed curly bracket.
+Where number - variable that should be used within the program.
 
 
-And the last 2 lines are closing curly braces: they simply mean the ending of boarders, that were opened before, there are
-two of them as 1 belong to method and the other belongs to class.
+6) Temperature converter. You will be given temperature in celsius and your task will be to print this temperature in 
+fahrenheit(formula will be required). Code snippet:
 
-------------------------------------------------------------
+
+        public class TemperatureConverter {
+            public void toFahrenheit(int temperatureCelsius){
+            }
+        }
+
+Where temperatureCelsius - variable that should be used within the program.
