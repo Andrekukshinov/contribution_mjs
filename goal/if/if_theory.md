@@ -230,11 +230,28 @@ variable on the left-hand side is more OR equals to the right one the result is 
 like:
 "Is 5 more OR equals to 5?"
 
-#####tasks
-1. Take three numbers from the user and print the greatest number.
-2. create a program that takes char and tells if it is ENG char or no
-3. takes a number 0..100, >? => orel reshka  
-4. complete the code so that it builds
+##### tasks
+1. ###### Greatest number printer. 
+Implement the program that will find the greatest number from two that are passed as 
+parameters to the method and print the greatest. In case of equality print any of them. Implement program in the code 
+snippet:
+
+
+        public class GreatestNumberPrinter {
+            public void printGreatest(int first, int second) {
+            }
+        }
+
+2. Coin flip. Implement the program which will consume 1 number in method arguments and if the number is less than 500
+print "Eagle" otherwise "Tail(range of numbers is [1-1000] no checks for that required):
+
+
+    public class CoinFlip {
+        public void throwCoin(int from1UpTo1000) {
+        }
+    }
+
+
 
 ***
 # Multiple conditions within one if block
@@ -296,14 +313,79 @@ The result of that expression is true as 9 doesn't equal to 0 => which makes thi
 using !(not) operator false becomes true(not false => true).
 
 ***
-####tasks
-1. tell the name of a season by number of a month
-2. take 2 numbers from user tell if one is "kraten" to another
-3. number vampires??
-4. Program to take a value from the user as input the basic salary of an employee and calculate its Gross salary according to the following: Basic Salary <= 10000: HRA = 20%, DA = 80%………………………………..Basic Salary <= 20000 : HRA = 25%, DA = 90%………………………………Basic Salary > 20000 : HRA = 30%, DA = 95%.
-5. Program to check whether a number is divisible by 5 and 11 or not by using if-else
-6. Program to take a value from the user as input any alphabet and check whether it is vowel or consonant
-7. Program to take a value from the user as input the month number and print number of days in that month
+#### tasks
+1. Seasons. Print the name of a season by number of a month(e.g. if number is 6 => "Summer"). Number of the month will be coming from parameter of the 
+method(if number is not a month number e.g. 13 => print: "wrong number!" ):
+
+
+    public class Seasons {
+        public void tellTheSeasonByMonthNumber(int month) {
+        }
+    }
+
+2. Aliquot numbers. Implement the program that will consume 2 numbers as method arguments and will print if the first 
+ number is Aliquot(prints:"Aliquot" is yes otherwise "Not aliquot") to the other:
+
+
+    public class AliquotNumbers {
+        public void isFirstAliquot(int first, int second) {
+        }
+    }
+
+3. Is symbol english determiner. Implement the program that prints to console if char is from ENG layout
+(prints "English") or no(prints "Non English"):
+
+
+        public class IsEnglishSymbolDeterminer {
+            public void isEnglishSymbol(char symbol) {
+            }
+        }
+
+4. Salary calculator. Implement the program that will consume salary from method argument as input of an employee and 
+calculate its salary after taxes according to the following:
+Basic Salary <= 10000: taxes - 15%.
+10000 < Basic Salary <= 20000: taxes - 18%
+Basic Salary > 20000 : taxes - 20%
+Basic salary < 0 -> "wrong input!"
+
+
+    public class SalaryCalculator {
+        public void calculateSalary(int salary) {
+        }
+    }
+
+
+
+5. Divider. Implement the program to check and print whether a number from method argument is divisible by 5 and 11 or 
+ not by using if-else(print "Dividable" if so otherwise "Non-dividable" and if 0 -> "cannot divide by zero"):
+
+
+    public class Divider {
+        public void isDividableBy5And11(int number) {
+        }
+    }
+
+6. Alphabetic characters. Implement the program that will consume a character from method argument which will be from
+ english alphabet and print vowel if it is "Vowel" or consonant if it's "Consonant". And If it is not from eng alphabet 
+ than print "wrong alphabet!"
+
+
+    public class AlphabeticCharacters {
+        public void vowelDeterminer(char character) {
+        }
+    }
+
+
+7. ##### Days in month printer.
+Implement the program that will consume a number month from method argument and print amount
+of days in that month, if number is not a month number -> print: "wrong number!":
+
+
+    public class DaysInMonthPrinter {
+        public void amountOfDays(int month) {
+        }
+    }
+
 
 # Speeding up the calculations
 
@@ -373,14 +455,68 @@ less code, as code is written once, but it's read dozens times. Which means that
 executed blocks of code consist of more than one statement.
 
 ####tasks
-1. create a task with ||
-2. create a task with &&
-3. create a task with  || &&
-4. complete the statement up to ternary 
-5. rewrite some task with ternary operator
-6. sout ternary result
-7. assign ternary result
-8. ternary max out of three
+1. ##### Greatest from 3.
+ Implement the program that will consume 3 numbers from method arguments and it will print the
+print greatest out of three. In case if there are more than 1 biggest -> print any of them.(Libraries are forbidden)
+
+
+    public class MaxNumberPrinter {
+        public void printGreatest(int first, int second, int third) {
+        }
+    }
+
+2. Ternary operator. Complete the statement below so as to make it compile and print 23
+ (using ternary operator):
+
+
+    public class TernaryOperator {
+        public static void main(String[] args) {
+            int b = 16;
+            b = b __ 0 ? 10 : 23;
+            System.out.println(b);
+        }
+    }
+
+3. Ternary greatest from 2. Rewrite [Greatest number printer task](/goal/if/if_theory.md#Greatest number printer.) using
+rewrite some task with ternary operator:
+
+
+
+        public class TernaryGreatestNumberPrinter {
+            public void printGreatest(int first, int second) {
+            }
+        }
+
+
+4. Ternary printer. Implement the program that will consume 2 numbers and based on their compression will print 
+ to console which is bigger. Compression should be implemented with ternary operator, which should be used inside of 
+ System.out.println method.(print "first", if the first is bigger and "second" in the rest cases). System.out.println 
+ should be used only 1 time
+
+
+    public class TernaryPrinter {
+        public void printWhichIsBigger(int first, int second) {
+        }
+    }
+
+5. Ternary assignment. Create a variable "int result" and dependent on the result compression of 2 variables from method 
+arguments and the assign to the created variable the value using ternary result: if the first is bigger -> 10 otherwise 
+-10. And print result variable.
+
+
+        public class TernaryAssignment {
+            public void assignAndPrintBasedOnWhichBigger(int first, int second) {
+            }
+        }
+
+6. Ternary greatest from 3. Rewrite [first task](/goal/if/if_theory.md#Greatest from 3.) from the module using ternary 
+operator. 
+
+
+     public class TernaryMaxNumberPrinter {
+        public void printGreatest(int first, int second, int third) {
+        }
+    }
 ***
 
 # Multiple if cases
@@ -534,11 +670,79 @@ This means the following: if the value eqauls to 1, 2, 12 => execute that block 
 cases) and it's the same for all the rest options.
 
 ####tasks
-1. make it compile(miss default)
-2. make correct output (remove break)
-3. rewrite with switch
-4. Program to find the maximum between three numbers. Using the switch statement.
-5.  Program to check whether a year is a leap year or not.
+1. Basic switch. Update the program so that it prints "default", using switch statement:
+
+
+     public class BasicSwitch {
+        public static void main(String[] args) {
+            int a = 20;
+            switch (a) {
+                default:
+                    System.out.println("default");
+                    break;
+                case 7:
+                    System.out.println("seven");
+                    break;
+                case 10:
+                    System.out.println("ten");
+                    break;
+                case 20:
+                    System.out.println("twenty");
+                    break;
+            }
+        }
+    }
+
+2. Basic switch breaks. Update the program so that it prints "20", using switch statement:
+
+
+
+     public class BasicSwitch {
+        public static void main(String[] args) {
+            int a = 20;
+            switch (a) {
+                default:
+                    System.out.println("default");
+                case 7:
+                    System.out.println("seven");
+                case 10:
+                    System.out.println("ten");
+                case 20:
+                    System.out.println("twenty");
+            }
+        }
+    }
+
+
+3. Switch days in month printer. Rewrite [days in month printer](/goal/if/if_theory.md#Days in month printer.) with
+switch :
+
+
+     public class SwitchDaysInMonthPrinter {
+        public void amountOfDays(int month) {
+        }
+     }
+
+
+4. Range numbers printer. Create that will be printing if number is between 1 and 5("number is between 1 and 5"), 6 and 
+10("number is between 6 and 10") or "out of range" using switch statement. Number to be defined will be passed to method 
+arguments:
+
+
+        public class RangeNumbersPrinter {
+             public void printRange(int number) {
+             }
+        }
+
+5. Leap year printer. Create a program to check whether a year is a leap year or not("leap" if true otherwise "not leap").
+Year will be passed as argument in method parameter:
+
+
+        public class LeapYearPrinter {
+             public void isLeapYear(int year) {
+             }
+        }
+
 
 
 So what should happen if we do not set break to any of the statements? (self exploring section).
@@ -564,11 +768,6 @@ In the code snippet above the result of executing switch statement is assigned t
 be assigned? Dependent on the value of "count" either 12 or 0 will be assigned to "toBeAssigned": if count is 1 , then
 the first block of code is executed output will be "1" and toBeAssigned will become 12. Otherwise, the other block will
 be involved, toBeAssigned will be 0.
-     
-####tasks 
-1. assign the value to var
-2. sout value from switch
-***
 
 #Logical vs boolean
 
@@ -674,15 +873,74 @@ when boolean conditions do not do extra calculations if not necessary.
 
 
 ##FINAL TASK
-1. tell the name of a season by number of a month
-2. swap 2 variables without creating new variables or objects(^)
-3. Program to find the maximum between three numbers. Using the switch statement.
-4. Program to check whether a year is a leap year or not.
-5. create a task with  || &&
-6. create some task that can potentially w8 for student's value to get correct answer
-7. Program to take a value from the user as input the month number and print number of days in that month
-8. take 2 numbers from user tell if one is "kraten" to another
-9. number vampires??
+1. Season determiner. Implement the program that will print the season name to the console by the number of the month. 
+ If month is incorrect -> print "Wrong month number". Month will be passed as the method argument.
+ (Example: "1" -> "Winter", 0 -> "Wrong month number")
+
+
+     public class SeasonDeterminer {
+        public void tellTheSeason(int monthNumber) {
+        }
+     }
+
+
+2. Triangle sides validator. Create a program that will consume 3 points as method arguments and will print to the console if 
+ those points can build up a valid triangle or not. (output when correct: "this is a valid triangle", otherwise :
+ "it's not a triangle")
+
+
+     public class TriangleValidator {
+         public void validate(double firstSide, double secondSide, double thirdSide) {
+         }
+     }
+
+3. Days in a month. Create a program that will consume a year and a month (validation is required) and will print amount
+of days in this month considering also if a year is leap or not.(prints amount of days or else "invalid date", 
+negative years are not accepted)
+
+   
+    public class DaysInMonth {
+        public void printDays(int year, int month) {
+    
+        }
+    }
+
+4. Integer divider. Create a program that will consume 2 integers from method args (dividend and divider) and will 
+perform integer division of dividend be divider, save the value, and then will multiply result by divider and will if 
+got value is equal to dividend will print:"can be divided completely", otherwise "cannot be divided completely" or 
+"division by zero".
+
+
+       public class IntegerDivider {
+           public void printCompletelyDivided(int dividend, int divider) {
+       
+           }
+       }
+
+
+5. Coordinate Pane. Create a program that will consume 2 integers from method args as data of a coordinate point in a XY 
+coordinate system and determine in which quadrant the coordinate point lies(beginning with top right:"first", "second",
+"third", "fourth", "zero"):
+
+
+       public class CoordinatePane {
+           public void printQuadrant(int x, int y) {
+       
+           }
+       }
+
+
+6. The least common multiple. Implement the program that will find LCM for any of 2 numbers passed as method params.
+
+
+    public class LeastCommonMultiple {
+        public void printLCM(int first, int second) {
+    
+        }
+    }
+
+9. Values swapper.  swap 2 variables without creating new variables or objects(^)*
+
 
 
 
