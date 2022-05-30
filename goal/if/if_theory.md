@@ -939,16 +939,14 @@ coordinate system and determine in which quadrant the coordinate point lies(begi
         }
     }
 
-9. Values swapper.  swap 2 variables without creating new variables or objects(^)*
+7. Bitwise values swap. Implement the program that will swap 2 variables without creating new variables or objects, 
+ using bitwise operators:
+
+
+     public class BitwiseValuesSwap {
+         public void swap(int first, int second) {
+         }
+     }
 
 
 
-
-Task for review(tell the name of a season by number of a month):
-Seasons. User should be able to input ordinal number of month from 
-keyboard and as a result of program execution the name of the season
-should be displayed. Program should be implemented in the main method
-of Season class under the package com.epam.cources.if.final.task. 
-If the input is invalid user should see the error message:
-"Number %n is has no corresponding month number!"
-//to mock System.in this link https://stefanbirkner.github.io/system-rules/ + https://mvnrepository.com/artifact/com.github.stefanbirkner/system-rules
