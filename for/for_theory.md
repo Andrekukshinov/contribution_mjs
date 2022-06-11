@@ -91,19 +91,69 @@ After taking a look at "while" loop, this task becomes much less time-consuming,
 limitations on the amount of repetitions, which can save much time for us.
 
 ###Tasks:
-1. NaturalNumbers. Write a program that will write to console numbers from zero to the number from method arguments.
-2. EvenNumbers. Write a program that will write to console even numbers from zero to the number from method.
-3. Multiplication. Write a program that will write to console multiplied numbers by input from zero to the number from method.
-4. WordsBuilder. Write a program that will build a phrase from given chars (char...). !HINT check size() method in google! 
-5. SimpleNumbers. Find all simple numbers from 0 up to input.
-6. Factorial.
-7. PowerOfTwo. Write a program that will take *int power* as an argument. This argument will be used to calculate power 
-of 2. The program should write to console each power of 2 beginning from 2^0...2^power. Write the program using "while":
+1. Natural numbers. Write a program that will write to console numbers from zero to the number from method arguments 
+using while loop, each on new line:
+
+    
+    public class NaturalNumbers {
+        public void naturalNumbersPrinter(int lastPrinted) {
+        }
+    }
 
 
-    public class Main {
+2. Even numbers. Write a program that will write to console even numbers from zero to the number from method arguments
+   using while loop, each on new line:
+
+
+    public class EvenNumbersPrinter {
+        public void printEvenNumbers(int printTillInclusive) {
+        }
+    }
+
+3. Multiplication. Write a program that will write to console multiplied numbers by input from zero to the number from 
+ method arguments using while loop, each on new line(program should also be able to work with negatives):
+
+
+    public class Multiplication {
+        public void printMultiplied(int multiplyByAndToInclusive) {
+        }
+    }
+
+
+4. Simple numbers. Write a program that will write to console all simple numbers from 0 up to input from method arguments 
+ using while loop, each on new line:
+
+
+    public class PrimeNumbers {
+        public void printPrimeNumbers(int printToInclusive) {
+        }
+    }
+
+5. Factorial. Write a program that will write to console all numbers from factorial row, from 0 up to input from method 
+ arguments using while loop, each on new line:
+
+    
+    public class FactorialNumbers {
+        public void printFactorialRow(int printToInclusive) {
+        }
+    }
+
+6. Power of two. Write a program that will take *int power* as an argument. This argument will be used to calculate power 
+of 2. The program should write to console each value for power of 2 beginning from 2^0...2^power. Write the program using "while"
+in case of negative value print "too much power":
+
+
+    public class PowerOfTwo {
         public void powerOfTwo(int power){
             //write your code here
+        }
+    }
+
+7.* WordsBuilder. Write a program that will build a phrase from given chars (char...). !HINT check length method in google!
+
+
+    public class WordsBuilder {
+        public void buildPhrase(char... chars) { 
         }
     }
 
@@ -140,13 +190,59 @@ those interactions can be different: we can multiply, divide , decrease the coun
 
 
 ###Tasks:
-1. Range sum. Write a program that will find the sum between numbers with in the range.
+1. Range sum. Write a program that will print the sum between numbers given as method arguments:
+
+
+    public class RangeSum {
+        public void printSumInclusive(int firstBoarder, int secondBoarder) {
+        }
+    }
+
 2. Alphabet. Write a program that will write to console English alphabet.
-3. GCD. Write a program that will find the Greatest Common Divisor (GCD) of two numbers
-4. **REVERT STRING**. It's allowed to use only loops and no special methods like:String.revert(), ...
-5. Digits sum. Write a program that will find the sum of digits of a given number
-6. 9-s sum. Write a program that will display the sum of the series [ 9 + 99 + 999 + 9999 ...]
-7. Fibonacci. Write a program that will  display the first n terms of Fibonacci series.
+
+
+    public class AlphabetPrinter {
+        public  void printAlphabet() {
+        }
+    }
+3. GCD. Write a program that will print the Greatest Common Divisor (GCD) of two numbers given as method arguments:
+
+
+    public class GreatestCommonDivisor {
+        public void printGCD(int first, int second) {
+        }
+    }
+
+
+4. Digits sum. Write a program that will find the sum of digits of a given number passed as a method argument. 
+ There are some tips: if you concatenate int with string you will be able to use string.length() and iterate till the end.
+you shouldn't use other String methods, but length:
+
+
+    public class DigitsSum {
+        public void printDigitsSum(int number){
+        }
+    }
+
+6. 9-s sum. Write a program that will display the sum of the series [ 9 + 99 + 999 + 9999 ... n]. Where n is a number 
+passed as a method argument, n is the last number which consists of "9" n times:
+
+
+    public class NinesSum {
+        public void calculateSum(int lengthOfLastNumber) {
+        }
+    }
+
+7. Fibonacci. Write a program that will  display the first n terms of Fibonacci series, each on new line:
+
+
+    public class FibonacciSeries {
+        public void printFibonacci(int lastFibonacci) {
+        }
+    }
+
+
+8. **REVERT STRING**. It's allowed to use only loops and no special methods like:String.revert(), ...
 
 ***
 ###While vs For
@@ -285,13 +381,63 @@ here the logics is the same.
 
 
 ####TASKS:
-1. Fix the code. (Write anything after break).
-2. 3.Write a program that will print all numbers from zero up to given, skipping each 3rd.
-3. Sum of skipped. Write a program that will consume 2 args: the first is number to skip, the second to iterate till. 
-Program should count sum of all skipped numbers.
+1. Fix me. Change the program code so that it compiles and prints everything as it is in expected output.
+
+
+    public class FixMe {
+        public static void main(String[] args) {
+            for (int i = 0; i < 100; i++) {
+                if (i % 2 == 0) {
+                    System.out.println(i);
+                } else if (i == 7) {
+                    System.out.println("last");
+                    break;
+                    System.out.println("will I be printed?");
+                }
+            }
+        }
+    }
+//Expected output:
+0
+2
+4
+6
+last
+will I be printed?
+
+
+2. Skipping third. Write a program that will print all numbers from one up to given(inclusive), skipping each 3rd. 
+
+
+    public class SkippingThird {
+        public void printUntilButThird(int lastPrinted) {
+        }
+    }
+
+3. Sum of skipped. Write a program that will consume 2 args: the first is number to skip, the second to iterate till. You
+should consider the cases:
+3.1. when numberToSkip is greater than lastInRow -> output is:"number to skip is bugger then the last"
+3.2. when lastInRow is negative -> output is:"last number in row is negative"
+3.3. for the rest cases output is:
+"skipped sum is number"
+"counted sum is number", 
+where number is an actual sum of them:
+
+
+    public class TwoRangesSum {
+        public void printSumOfTwoRanges(int numberToSkip, int lastInRow) {
+        }
+    }
+
 4. Number to break. Write a program that will consume 2 args: the first is number to break on, the second to iterate till,
 if number to iterate till is less than to break with -> sout("iterating till the end") and print all the numbers till 
 the end, otherwise all numbers till toBreakWith.
+
+
+    public class NumberToBreakOn {
+        public void printNumbersUntilWithBreakOn(int toBreakWith, int numberToGoUntil) {
+        }
+    }
 
 ***
 ###Infinite loops
@@ -381,7 +527,7 @@ of the plane.
    length(it should consist of '8'-s).
 4. Hourglass. Write a program write to console filled Hourglass of a given length(it should consist of '8'-s).
 5. Rectangle. Write a program write to console an empty rectangle of a given sizeS(it should consist of '8'-s).
-6. Pyramid. Write a program that will print :![img_9.png](img_9.png)
+
 
 ***
 ###Go to 
@@ -396,26 +542,9 @@ them more, do some research on your own.
 
 ###FINAL TASK
 1. Multiplication table. Write a program that prompts the user to input a positive integer. It should then print the multiplication table of that number.
-2. First 'n' last. Write a program that will find the sum of first and last digit of a number
 3. Pyramid. Write a program that will print :![img_8.png](img_8.png)
 4. Power. Write a program that will find power of any number using for loop
 5. 6. 9-s sum. Write a program that will display the sum of the series [ 9 + 99 + 999 + 9999 ...]
 6. 4. **REVERT STRING**. It's allowed to use only loops and no special methods like:String.revert(), ...
-7. Compute the natural logarithm of 2, by adding up to n terms in the series 1 - 1/2 + 1/3 - 1/4 + 1/5 -... 1/n
-8. Inside break. 2 args nested loop iteration printing a matrix without given number.
-9. Frequency. Write a program that will find the frequency of each digit in a given integer
-10. Diamond.  display the pattern like a diamond. Go to the editor
-    Sample Output:
-    Input number of rows (half of the diamond): 5
-
- ```  
-        *
-       ***                                                                 
-      *****                                                                
-     *******                                                               
-    *********                                                              
-     *******                                                               
-      *****                                                                
-       ***                                                                 
-        *  
+6. Pyramid. Write a program that will print :![img_9.png](img_9.png)
 ```
